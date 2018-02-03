@@ -1,0 +1,126 @@
+* {
+}
+
+body {
+  height: 100%;
+  background-color: #282828;
+  justify-content: center;
+}
+
+button {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-width: 0;
+  border-radius: 50%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+button:focus {
+  outline:0;
+}
+
+
+p {
+  position: relative;
+  font-size: 34px;
+  color: #FFFFFF;
+  margin: auto auto;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 35px 35px 35px;
+  background-color: #000000;
+  border-style: solid;
+  border-color: #C0C0C0;
+  border-width: 2px;
+  border-radius: 35px;
+}
+
+.displayContainer {
+  position: relative;
+  width: 325px;
+  height: 70px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.buttonContainer {
+  display: grid;
+  position: relative;
+  width: 325px;
+  height: 406.25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.orangeButton {
+  background-color: #FF9719;
+}
+
+.greyButton {
+  background-color: #C0C0C0;
+}
+
+.blackButton {
+  background-color: #282828;
+}
+
+.zeroDiv {
+  grid-column-end: span 2;
+}
+
+.zeroButton {
+  width: 150px;
+  border-radius: 35px;
+}
+
+.blackText {
+  color: #000000;
+}
+
+.zeroText {
+  left: 30px;
+  top: 18.5px;
+  transform: translate(-50%, -50%);
+}
+
+.operatorText {
+  font-size: 40px;
+}
+
+.displayText {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: right;
+  right: 10px;
+  font-size: 70px;
+  word-wrap: break-word;
+}
+
+.operatorClicked {
+  background-color: #FFD27F;
+  transition: background-color .3s;
+}
+
+.blackButtonFlash {
+  background-color: #484848;
+  transition: background-color 25ms;
+}
+
+.greyButtonFlash {
+  background-color: #E0E0E0;
+  transition: background-color 25ms;
+}
+
+.orangeButtonFlash {
+  background-color: #FFD27F;
+  transition: background-color 25ms;
+}
